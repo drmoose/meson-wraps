@@ -117,13 +117,12 @@ else
     xtensor_blas_dep = dependency('', required: false) # aka "not found"
 endif
 
-install_headers(
-    'include/xtensor-blas/xblas_config_cling.hpp.in',
-    'include/xtensor-blas/xblas_config.hpp',
-    'include/xtensor-blas/xblas.hpp',
-    'include/xtensor-blas/xblas_utils.hpp',
-    'include/xtensor-blas/xlapack.hpp',
-    'include/xtensor-blas/xlinalg.hpp',
-    subdir: 'xtensor-blas')
+if meson.is_subproject()
+    install_dir = get_option('subproj_includedir')
+else
+    install_dir = get_option('includedir')
+endif
 
-install_subdir('include/xflens', install_dir: 'include')
+install_subdir('include/xtensor-blas/', install_dir: install_dir)
+
+install_subdir('include/xflens', install_dir: install_dir)
