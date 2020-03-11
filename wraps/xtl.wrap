@@ -5,6 +5,6 @@ source_url=https://github.com/QuantStack/xtl/archive/0.6.3.zip
 source_filename=xtl-0.6.3.zip
 source_hash=b7712b9596a5fa1368175a1ce1cf1f3a1bfcacbc7229e57e65d76df8591b2c08
 
-patch_url=https://github.com/UnoccupiedColonist/meson-wraps/raw/installer_fixes/zips/xtl-0.6.3-patches-6.zip 
-patch_filename=xtl-0.6.3-patches-6.zip 
-patch_hash=9b9438bc184602272c941e936fd782e24d0c1ce5340b8b8d239cdf0cf5b9b52e
+patch_url=https://github.com/kyonifer/meson-wraps/raw/master/zips/xtl-0.6.3-patches-7.zip
+patch_filename=xtl-0.6.3-patches-7.zip
+patch_hash=1d9aba8cb9a87c620543a679c55170a98d20bdcd01048c9a6550b0a274bc30c0
